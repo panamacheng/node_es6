@@ -1,3 +1,4 @@
+import dotenv from 'dotenv';
 import express from 'express';
 import path from 'path';
 import cookieParser from 'cookie-parser';
@@ -8,6 +9,7 @@ import usersRouter from './routes/users';
 
 const app = express();
 
+app.set(dotenv.config());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

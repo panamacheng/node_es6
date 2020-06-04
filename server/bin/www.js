@@ -4,7 +4,6 @@
  * Module dependencies.
  */
 
-require('dotenv').config();
 import app from '../app';
 import debugLib from 'debug';
 import http from 'http';
